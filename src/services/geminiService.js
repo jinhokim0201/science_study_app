@@ -12,9 +12,15 @@ export const generateProblems = async (curriculumSummary, grade, title) => {
         throw new Error("Gemini API Key is missing. Please check your .env settings.");
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const candidateModels = ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-2.0-flash-exp", "gemini-pro"];
+    let lastError = null;
 
-    const prompt = `
+    for (const modelName of candidateModels) {
+        try {
+            console.log(`Trying model: ${modelName}`);
+            const model = genAI.getGenerativeModel({ model: modelName });
+
+            const prompt = `
         You are a Korean Science Teacher exam generator.
         Create a mock exam with **40 multiple-choice questions** for:
         - Grade: ${grade}
@@ -40,24 +46,28 @@ export const generateProblems = async (curriculumSummary, grade, title) => {
         6. Return ONLY valid JSON text. No markdown formatting like \`\`\`json.
     `;
 
-    try {
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        let text = response.text();
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            let text = response.text();
 
-        // Cleanup markdown if present
-        text = text.replace(/```json/g, "").replace(/```/g, "").trim();
+            // Clean up markdown/json formatting if present
+            text = text.replace(/```json/g, "").replace(/```/g, "").trim();
 
-        const problems = JSON.parse(text);
+            const problems = JSON.parse(text);
 
-        // Basic validation
-        if (!Array.isArray(problems) || problems.length < 5) {
-            throw new Error("Generated content is not a valid problem list.");
+            // Basic validation
+            if (!Array.isArray(problems) || problems.length < 5) {
+                console.warn(`Model ${modelName} returned invalid data. Retrying...`);
+                continue;
+            }
+
+            return problems;
+        } catch (error) {
+            console.warn(`Model ${modelName} failed:`, error);
+            lastError = error;
+            // Continue to next model
         }
-
-        return problems;
-    } catch (error) {
-        console.error("Gemini Generation Error:", error);
-        throw error;
     }
+
+    throw new Error(`All Gemini models failed. Last error: ${lastError?.message || "Unknown error"}`);
 };

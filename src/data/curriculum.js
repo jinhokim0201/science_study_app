@@ -10,7 +10,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t1",
                         title: "지구계와 지권의 층상 구조",
-                        videoId: "TE7lUnL8vPg", // Real Youtube: EBS 중1 지권의 층상 구조
+                        videoId: "wSz0VEcdExE", // Real Youtube: EBS 중1 지권의 층상 구조
                         content: `
 # 지구계와 지권의 구조
 
@@ -46,7 +46,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t2",
                         title: "암석의 종류와 순환",
-                        videoId: "8B4h2rVpt_0", // Real Youtube: EBS 중1 암석
+                        videoId: "Dr2QJJYyi_U", // Real Youtube: EBS 중1 암석
                         content: `
 # 암석의 종류와 순환
 
@@ -74,7 +74,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t3",
                         title: "판 구조론과 지각 변동",
-                        videoId: "mQ7y9-v2y8s", // Real Youtube: EBS 중1 판 구조론
+                        videoId: "1JK6fJ359e4", // Real Youtube: EBS 중1 판 구조론
                         content: `
 # 판 구조론 (Plate Tectonics)
 
@@ -106,7 +106,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s2-t1",
                         title: "중력과 탄성력",
-                        videoId: "9t64-Qf851Y", // Real Youtube: EBS 중1 중력과 탄성력
+                        videoId: "admFJBoNJ1o", // Real Youtube: EBS 중1 중력과 탄성력
                         content: `
 # 1. 중력 (Gravity)
 
@@ -158,7 +158,7 @@ export const CURRICULUM = [
                     {
                         id: "h1-s1-t1",
                         title: "우주의 시작과 원소의 생성",
-                        videoId: "_T18aN-MvYw", // Real Youtube: EBS 고1 우주 원소
+                        videoId: "K8dFfSeXedM", // Real Youtube: EBS 고1 우주 원소
                         content: `
 # 우주 초기 원소의 생성 (빅뱅 우주론)
 
@@ -205,7 +205,7 @@ export const CURRICULUM = [
                     {
                         id: "h1-s1-t3",
                         title: "화학 결합",
-                        videoId: "kYI-Y_P3wSg", // Real Youtube: EBS 고1 화학 결합
+                        videoId: "DIZHorfbTTY", // Real Youtube: EBS 고1 화학 결합
                         content: `
 # 화학 결합의 형성
 
@@ -240,7 +240,7 @@ export const CURRICULUM = [
                     {
                         id: "h2-phy1-t1",
                         title: "힘과 운동",
-                        videoId: "F2hK9j_T7M4", // Real Youtube: EBS 고2 힘과 운동
+                        videoId: "E5CWNemFzRU", // Real Youtube: EBS 고2 힘과 운동
                         content: `
 # 물체의 운동
 
@@ -300,7 +300,7 @@ export const CURRICULUM = [
                     {
                         id: "h3-earth2-t1",
                         title: "지구의 형성과 역장",
-                        videoId: "0N5_u9yX_Hw", // Real Youtube: EBS 고3 지구의 형성
+                        videoId: "ZknwqieFqwk", // Real Youtube: EBS 고3 지구의 형성
                         content: `
 # 지구의 형성과 역장
 
@@ -323,7 +323,7 @@ export const CURRICULUM = [
                     {
                         id: "h3-earth2-t2",
                         title: "지구 자기장",
-                        videoId: "0N5_u9yX_Hw",
+                        videoId: "ZknwqieFqwk",
                         content: `
 # 지구 자기장
 

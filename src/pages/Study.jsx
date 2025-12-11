@@ -118,14 +118,14 @@ const Study = () => {
             </div>
 
             {/* Main Content */}
-            <div className="flex-1 flex flex-col gap-6 min-w-0 overflow-hidden">
+            <div className="flex-1 flex flex-col gap-6 min-w-0 overflow-y-auto custom-scrollbar pr-2">
                 {/* Top: Lecture Notes (Took place of Video) */}
-                <div className="flex-1 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col min-h-0">
+                <div className="flex-none bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col min-h-[700px]">
                     <h3 className="font-bold text-lg mb-4 flex items-center gap-2 flex-shrink-0">
                         <span className="w-1.5 h-6 bg-indigo-500 rounded-full" />
                         강의 핵심 노트
                     </h3>
-                    <div className="flex-1 overflow-auto custom-scrollbar">
+                    <div className="flex-1">
                         <ContentViewer content={activeTopic.content} />
                     </div>
                 </div>
