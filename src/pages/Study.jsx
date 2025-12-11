@@ -119,35 +119,20 @@ const Study = () => {
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col gap-6 min-w-0 overflow-hidden">
-                {/* Top: Video */}
-                <div className="flex-shrink-0">
-                    <VideoPlayer videoId={activeTopic.videoId} title={activeTopic.title} />
+                {/* Top: Lecture Notes (Took place of Video) */}
+                <div className="flex-1 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col min-h-0">
+                    <h3 className="font-bold text-lg mb-4 flex items-center gap-2 flex-shrink-0">
+                        <span className="w-1.5 h-6 bg-indigo-500 rounded-full" />
+                        강의 핵심 노트
+                    </h3>
+                    <div className="flex-1 overflow-auto custom-scrollbar">
+                        <ContentViewer content={activeTopic.content} />
+                    </div>
                 </div>
 
-                {/* Bottom: Splits Text Content and User Notes */}
-                <div className="flex-1 flex flex-col md:flex-row gap-6 min-h-0">
-                    {/* Lecture Notes (MarkDown) */}
-                    <div className="flex-1 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col min-h-0">
-                        <h3 className="font-bold text-lg mb-4 flex items-center gap-2 flex-shrink-0">
-                            <span className="w-1.5 h-6 bg-indigo-500 rounded-full" />
-                            강의 핵심 노트
-                        </h3>
-                        <div className="flex-1 overflow-auto custom-scrollbar">
-                            <ContentViewer content={activeTopic.content} />
-                        </div>
-                    </div>
-
-                    {/* User Memo */}
-                    <div className="w-full md:w-80 bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col min-h-0">
-                        <h3 className="font-bold text-lg mb-4 flex items-center gap-2 flex-shrink-0">
-                            <span className="w-1.5 h-6 bg-secondary/80 rounded-full" />
-                            나의 메모
-                        </h3>
-                        <textarea
-                            className="flex-1 w-full bg-slate-50 border border-slate-200 rounded-xl p-4 resize-none focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-sm leading-relaxed"
-                            placeholder="영상과 노트를 보며 중요한 내용을 기록해 보세요."
-                        />
-                    </div>
+                {/* Bottom: Video (Moved from top) */}
+                <div className="flex-shrink-0">
+                    <VideoPlayer videoId={activeTopic.videoId} title={activeTopic.title} />
                 </div>
             </div>
         </div>

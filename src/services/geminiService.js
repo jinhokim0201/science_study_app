@@ -12,7 +12,7 @@ export const generateProblems = async (curriculumSummary, grade, title) => {
         throw new Error("Gemini API Key is missing. Please check your .env settings.");
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const prompt = `
         You are a Korean Science Teacher exam generator.

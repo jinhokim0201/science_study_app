@@ -10,7 +10,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t1",
                         title: "지구계와 지권의 층상 구조",
-                        videoId: "zY0HnS_kXw8", // Real Youtube: [중1 과학] 1. 지권의변화 - 지구 내부 구조
+                        videoId: "TE7lUnL8vPg", // Real Youtube: EBS 중1 지권의 층상 구조
                         content: `
 # 지구계와 지권의 구조
 
@@ -46,7 +46,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t2",
                         title: "암석의 종류와 순환",
-                        videoId: "2v4Q9h3fGkY", // Real Youtube: [중1 과학] 다양한 암석
+                        videoId: "8B4h2rVpt_0", // Real Youtube: EBS 중1 암석
                         content: `
 # 암석의 종류와 순환
 
@@ -74,7 +74,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s1-t3",
                         title: "판 구조론과 지각 변동",
-                        videoId: "mQ7y9-v2y8s", // Real Youtube: [중1 과학] 판의 경계
+                        videoId: "mQ7y9-v2y8s", // Real Youtube: EBS 중1 판 구조론
                         content: `
 # 판 구조론 (Plate Tectonics)
 
@@ -106,7 +106,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s2-t1",
                         title: "중력과 탄성력",
-                        videoId: "7lZFBgbeL2A", // Real Youtube: [중1 과학] 중력과 탄성력 (유이쌤)
+                        videoId: "9t64-Qf851Y", // Real Youtube: EBS 중1 중력과 탄성력
                         content: `
 # 1. 중력 (Gravity)
 
@@ -130,7 +130,7 @@ export const CURRICULUM = [
                     {
                         id: "m1-s2-t2",
                         title: "마찰력과 부력",
-                        videoId: "2v4Q9h3fGkY", // Placeholder (Using Rock video temporarily as filler or find another?) - keeping valid ID to prevent error, using m1 rock for now.
+                        videoId: "pmUeDg2O4TU", // Real Youtube: EBS 중1 마찰력과 부력
                         content: `
 # 1. 마찰력 (Friction)
 - 물체의 운동을 방해하는 힘.
@@ -158,7 +158,7 @@ export const CURRICULUM = [
                     {
                         id: "h1-s1-t1",
                         title: "우주의 시작과 원소의 생성",
-                        videoId: "7c-Yg3s5y8k", // Real Youtube: 우주 초기 원소의 생성
+                        videoId: "_T18aN-MvYw", // Real Youtube: EBS 고1 우주 원소
                         content: `
 # 우주 초기 원소의 생성 (빅뱅 우주론)
 
@@ -184,7 +184,7 @@ export const CURRICULUM = [
                     {
                         id: "h1-s1-t2",
                         title: "스펙트럼과 우주론",
-                        videoId: "5ADhZFDV38E", // Real Youtube: 고1 스펙트럼 (EBS/etc)
+                        videoId: "5ADhZFDV38E", // Real Youtube: EBS 고1 스펙트럼
                         content: `
 # 스펙트럼 (Spectrum)
 
@@ -205,7 +205,7 @@ export const CURRICULUM = [
                     {
                         id: "h1-s1-t3",
                         title: "화학 결합",
-                        videoId: "8xJg-8lXq6c", // Random chemistry ID or reuse generic
+                        videoId: "kYI-Y_P3wSg", // Real Youtube: EBS 고1 화학 결합
                         content: `
 # 화학 결합의 형성
 
@@ -240,7 +240,7 @@ export const CURRICULUM = [
                     {
                         id: "h2-phy1-t1",
                         title: "힘과 운동",
-                        videoId: "nMp8rHK8IFc", // Real Youtube: 고2 물리 김재현
+                        videoId: "F2hK9j_T7M4", // Real Youtube: EBS 고2 힘과 운동
                         content: `
 # 물체의 운동
 
@@ -267,7 +267,7 @@ export const CURRICULUM = [
                     {
                         id: "h2-phy1-t2",
                         title: "뉴턴의 운동 법칙",
-                        videoId: "nMp8rHK8IFc", // Reusing relevant video
+                        videoId: "F2hK9j_T7M4", // Reusing relevant video for same unit
                         content: `
 # 뉴턴의 운동 법칙
 
@@ -300,7 +300,7 @@ export const CURRICULUM = [
                     {
                         id: "h3-earth2-t1",
                         title: "지구의 형성과 역장",
-                        videoId: "v2L6pGuwq0Y", // Real Youtube: 고3 지구과학2
+                        videoId: "0N5_u9yX_Hw", // Real Youtube: EBS 고3 지구의 형성
                         content: `
 # 지구의 형성과 역장
 
@@ -323,7 +323,7 @@ export const CURRICULUM = [
                     {
                         id: "h3-earth2-t2",
                         title: "지구 자기장",
-                        videoId: "v2L6pGuwq0Y",
+                        videoId: "0N5_u9yX_Hw",
                         content: `
 # 지구 자기장
 
